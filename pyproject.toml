@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pytest_yes"
+authors = [{name = "Pasha", email = "9139136@gmail.com"}]
+readme = "README.md"
+classifiers = ["License :: OSI Approved :: MIT License", "Framework :: Pytest"]
+dynamic = ["version", "description"]
+dependencies = ["pytest>=6.2.0"]
+requires-python = ">=3.9"
+
+[project.urls]
+Home = "https://github.com/Pasha-lt/pythonProject"
+
+[project.entry-points.pytest11]
+pytest_yes = "pytest_yes"
+
+[tool.flit.module]
+name = "pytest_yes"
